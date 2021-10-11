@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>REGISTER FORM FOR EMPLOYEE DETAILS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            th{text-align: left;padding: 10px;color:wheat; font-style:italic}
+            body{background-image: url(image48.jpg)}
+            input[type = "text"], input[type = "number"], input[type = "email"]{
+                box-shadow: 0px 2px 0px wheat;
+            }
+            input[type = "submit"]{
+                font-weight: bolder;
+                background-color: blue;
+                border: 0;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 2px solid #2ecc71;
+                padding: 14px 35px;
+                outline:none;
+                color: white;
+                border-radius: 24px;
+                transition: 0.25s;
+                box-shadow: 5px 5px 5px skyblue;
+            }
+             input[type = "submit"]:hover{
+                background-color: limegreen;
+                box-shadow: none;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <form action="http://localhost:7777" method="POST" style="width:50%;background-color:wheat;box-shadow: 5px 5px 15px black">
+            <Fieldset  style="background-image:url(image47.jpg);">
+                <legend style="color:darkorange;text-align: center;">Register Form</legend>
+            <table>
+                <tr>
+                    <th>Enter First_Name : </th>
+                    <th><input type="text" name="firstname" style="width:248px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Enter Last_Name : </th>
+                    <th><input type="text" name="lastname" style="width:248px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Enter Address : </th>
+                    <th><textarea style="width: 248px;background-color: lightgoldenrodyellow;" cols="10" rows="3" name="address"></textarea><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Choose Gender : </th>
+                    <th><input type="radio" name="gender" value="Male" style="color:white;">Male<br>  
+                        <input type="radio" name="gender" value="Female" style="color:white;">Female<br>
+                        <input type="radio" name="gender" value="Others" style="color:white;">Others<br><br>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>Enter Phone number : </th>
+                    <th><input style="background-color: lightgoldenrodyellow;" type="text" name="countrycode" value="+91" size="2"/>
+                        <input type="number" name="num" style="width:193px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Enter Your EMAIL_ID : </th>
+                    <th><input type="email" name="email" style="width:248px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Enter Your Age : </th>
+                    <th><input type="number" name="age" step="any" style="width:248px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Enter Area_Of_Interest : </th>
+                    <th><input type="text" name="aoi" style="width:248px;background:none;border:none;color:white;"><br><br></th> 
+                </tr>
+                <tr>
+                    <th>Language_Known  : </th>
+                    <th><input type="checkbox" name="c1" value="Tamil" style="color:white;"/>Tamil<br>
+                        <input type="checkbox" name="c2" value="English" style="color:white;"/>English<br>
+                        <input type="checkbox" name="c3" value="Hindi" style="color:white;"/>Hindi<br>
+                        <input type="checkbox" name="c4" value="others" style="color:white;"/>others<br><br>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Qualification : </th>
+                    <th>
+                        <select style="width:248px;background-color: lightgoldenrodyellow" name="qual">
+                            <option value="Choose Qualification">- - - Choose Qualification - - -</option>
+                            <option value="Under Graduate">UG</option> 
+                            <option value="Post Graduate">PG</option>
+                            <option value="MBA">MBA</option>
+                            <option value="Others">Others</option>
+                        </select><br>
+                    </th> 
+                </tr>
+                <tr>
+                    <th colspan="2" style="text-align: center;"><input type="submit" value="submit"></th> 
+                </tr>
+            </table>
+            </Fieldset>
+        </form>
+    </center>
+    </body>
+</html>
